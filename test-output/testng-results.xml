@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-30T12:53:32 IST" name="Default suite" finished-at="2023-06-30T12:55:18 IST" duration-ms="106007">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Run1@5afa3c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-06-30T12:53:32 IST" name="Default test" finished-at="2023-06-30T12:55:18 IST" duration-ms="106007">
+      <class name="testRunner.Run1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.Run1@5afa3c9]" started-at="2023-06-30T12:53:32 IST" name="setUpClass" finished-at="2023-06-30T12:53:35 IST" duration-ms="2416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7f5e6833]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Run1@5afa3c9]" started-at="2023-06-30T12:53:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T12:53:57 IST" duration-ms="22430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate AddToCart button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate AddToCart functionality in HomePage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Run1@5afa3c9]" started-at="2023-06-30T12:53:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T12:55:05 IST" duration-ms="67844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Place an order using BuyNow button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place an Order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.Run1@5afa3c9]" started-at="2023-06-30T12:55:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-30T12:55:17 IST" duration-ms="12222" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Payment method on review and payment page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Payment method"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [weVend Gateway] but found [other gateway]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [weVend Gateway] but found [other gateway]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at StepDefs.PaymentMethodStepDef.payment_method_should_be_present_on_the_page_as(PaymentMethodStepDef.java:128)
+at ✽.Payment method should be present on the page as "weVend Gateway"(file:///D:/Test1/BDDcucumberProject2/src/test/resources/Features/PaymentMethod.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.Run1@5afa3c9]" started-at="2023-06-30T12:55:17 IST" name="tearDownClass" finished-at="2023-06-30T12:55:18 IST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.Run1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
